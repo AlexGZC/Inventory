@@ -1,0 +1,64 @@
+<resources>
+
+    <string name="detail_label">Part details</string>
+    <string name="addproduct_label">Add a new part</string>
+
+    <!-- MainActivity -->
+    <string name="app_name">Machine Parts</string>
+    <string name="heading_text">"Track your parts inventory"</string>
+    <string name="instructions">Use the Add New Part button to enter part information to begin populating your inventory list.</string>
+    <string name="list_heading_id">ID</string>
+    <string name="list_heading_part">Part</string>
+    <string name="list_heading_saleprice">Price</string>
+    <string name="list_heading_quantity">Qty</string>
+
+    <!-- List item sale button -->
+    <string name="list_item_sale_btn">Sell One</string>
+
+    <!-- AddProductActivity -->
+    <string name="add_product">Add New Part</string>
+    <string name="add_part_name">Part Name</string>
+    <string name="add_part_supplier">Supplier</string>
+    <string name="add_part_qty">Quantity</string>
+    <string name="add_part_cost">Purchase price</string>
+    <string name="add_part_price">Sale price</string>
+    <string name="add_part_image">Add Photo</string>
+    <string name="input_part_btn">Add to inventory</string>
+
+    <!-- Camera/Gallery -->
+    <string name="im_use_camera">Take a photo</string>
+    <string name="im_use_gallery">Choose from gallery</string>
+    <string name="im_cancel">Cancel</string>
+    <string name="im_select_file">Select file</string>
+    <string name="im_permission_denied">Permission denied</string>
+
+    <!-- Exception handling toasts -->
+    <string name="decrease_quantity_failure">Cannot have negative quantity</string>
+    <string name="part_added_success">Part added to inventory</string>
+    <string name="part_added_failure">Part not added to inventory.
+        Must include a valid name, supplier, quantity, purchase price and sale price, and image.</string>
+    <string name="invalid_numbers">Enter a positive integer quantity and valid prices.</string>
+
+    <!-- DetailActivity -->
+    <string name="adjust_1down_btn">Unit Sale</string>
+    <string name="adjust_1up_btn">Unit Buy</string>
+    <string name="adjust_quantity">Bulk Adjust:</string>
+    <string name="adjust_quantity_btn">Adjust</string>
+    <string name="adjust_quantity_hint">Ex: -50</string>
+    <string name="purchase_btn">Contact Purchasing Department</string>
+    <string name="quantity_adjust_failure">Quantity unchanged. Quantity cannot be negative.</string>
+    <string name="quantity_adjust_success">Quantity adjusted</string>
+    <string name="invalid_numbers2">Enter an integer quantity</string>
+
+    <string name="details_heading">Detailed part information</string>
+    <string name="prefix_part">Product ID:</string>
+    <string name="prefix_supplier">Vendor:</string>
+    <string name="prefix_quantity">Quantity available:</string>
+    <string name="prefix_cost">Purchase price</string>
+    <string name="prefix_price">Sale price</string>
+
+    <string name="adjust_heading">Inventory adjustments</string>
+    <string name="adjust_subheading">Record a single item sale or purchase, or make a bulk quantity adjustment.</string>
+
+    <string name="delete_btn">Delete Record</string>
+</resources>
