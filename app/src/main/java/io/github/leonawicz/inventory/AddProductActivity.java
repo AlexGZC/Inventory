@@ -87,8 +87,7 @@ public class AddProductActivity extends AppCompatActivity {
                     } else {
                         long inserted = dbHelper.insertTableRow(
                                 newPart, newSupplier, newQuantity, newCost, newPrice, currentBitmap);
-                        Toast.makeText(AddProductActivity.this,
-                                R.string.part_added_success, Toast.LENGTH_SHORT).show();
+                        finish();
                     }
                 } catch (NumberFormatException e) {
                     Toast.makeText(AddProductActivity.this,
