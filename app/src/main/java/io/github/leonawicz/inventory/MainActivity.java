@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         TextView part;
         TextView quantity;
         TextView price;
-        //ImageView thumbnail;
     }
 
     ViewHolder holder;
@@ -91,12 +90,6 @@ public class MainActivity extends AppCompatActivity {
                 refreshInstructionsView(adapter, instructView);
             }
         });
-    }
-
-    @Override
-    public void onStop(){
-        super.onStop();
-        //cursor.close();
     }
 
     public void refreshInstructionsView(InvCursorAdapter adapter, TextView view) {

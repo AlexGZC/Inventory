@@ -39,7 +39,8 @@
     <EditText
         android:id="@+id/input_part_qty"
         style="@style/add_part_style"
-        android:inputType="number" />
+        android:inputType="number"
+        android:digits="0123456789" />
 
     <TextView
         android:id="@+id/add_part_cost"
@@ -49,7 +50,8 @@
     <EditText
         android:id="@+id/input_part_cost"
         style="@style/add_part_style"
-        android:inputType="number" />
+        android:inputType="numberDecimal"
+        android:digits="0123456789."/>
 
     <TextView
         android:id="@+id/add_part_price"
@@ -59,7 +61,8 @@
     <EditText
         android:id="@+id/input_part_price"
         style="@style/add_part_style"
-        android:inputType="number" />
+        android:inputType="numberDecimal"
+        android:digits="0123456789." />
 
     <Button
         android:id="@+id/input_image_btn"

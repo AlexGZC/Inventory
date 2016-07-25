@@ -157,7 +157,9 @@
                 android:layout_weight=".2"
                 android:layout_height="wrap_content"
                 android:hint="@string/adjust_quantity_hint"
-                android:textColorHint="@color/colorAccent"/>
+                android:textColorHint="@color/colorAccent"
+                android:inputType="number"
+                android:digits="-0123456789"/>
 
             <Button
                 android:id="@+id/adjust_quantity_btn"

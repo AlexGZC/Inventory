@@ -198,21 +198,7 @@ public class AddProductActivity extends AppCompatActivity {
         if (data != null) {
             try {
                 bm = MediaStore.Images.Media.getBitmap(getApplicationContext().getContentResolver(), data.getData());
-                ByteArrayOutputStream bytes = new ByteArrayOutputStream();
-                bm.compress(Bitmap.CompressFormat.JPEG, 10, bytes);
-                File destination = new File(Environment.getExternalStorageDirectory(),
-                        System.currentTimeMillis() + ".jpg");
-                FileOutputStream fo;
-                try {
-                    destination.createNewFile();
-                    fo = new FileOutputStream(destination);
-                    fo.write(bytes.toByteArray());
-                    fo.close();
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+                bm = resize(bm, 100, true);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -240,6 +226,18 @@ public class AddProductActivity extends AppCompatActivity {
         }
         currentBitmap = thumbnail;
         holder.userImageView.setImageBitmap(thumbnail);
+    }
+
+    public static Bitmap resize(Bitmap originalImage, float maxImageSize, boolean filter) {
+        float ratio = Math.min(
+                (float) maxImageSize / originalImage.getWidth(),
+                (float) maxImageSize / originalImage.getHeight());
+        int width = Math.round((float) ratio * originalImage.getWidth());
+        int height = Math.round((float) ratio * originalImage.getHeight());
+
+        Bitmap bm = Bitmap.createScaledBitmap(originalImage, width,
+                height, filter);
+        return bm;
     }
 
 }
